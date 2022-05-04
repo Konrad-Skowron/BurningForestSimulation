@@ -1,6 +1,6 @@
 # BurningForestSimulation
 
-The program simulates the spread of a fire in a forest with the use of a two-dimensional mesh of any size. The simulation begins with a random mesh initialization. The `forestation` initialization parameter corresponds to the tree density.
+The program simulates the spread of a fire in a forest with the use of a two-dimensional mesh of any size. Tree catches on fire if there is burned tree in Moore neighborhood. The simulation begins with a random mesh initialization. The `forestation` initialization parameter corresponds to the tree density.
 
 **T** - tree  
 **X** - no tree  
