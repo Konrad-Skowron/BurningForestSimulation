@@ -16,7 +16,7 @@ public class BurningForestSimulation extends JPanel {
     private List<int[]> container1 = new ArrayList<>();
     private List<int[]> container2 = new ArrayList<>();
 
-    public static BurningForestSimulation forest = new BurningForestSimulation(100, 0.55);
+    public static BurningForestSimulation forest = new BurningForestSimulation(100, 0.5);
 
     public BurningForestSimulation(int size, double forestation) {
         this.size = size;
@@ -125,10 +125,10 @@ public class BurningForestSimulation extends JPanel {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (map[i][j] == 'T') {
-                    g.setColor(new Color(34, 139, 34));
+                    g.setColor(new Color(39, 111, 69));
                     g.fillRect(5 * j + 2, 5 * i + 2, 3, 3);
                 } else if (map[i][j] == 'B') {
-                    g.setColor(Color.orange);
+                    g.setColor(new Color(71, 251, 148));
                     g.fillRect(5 * j + 2, 5 * i + 2, 3, 3);
                 }
             }
@@ -141,7 +141,7 @@ public class BurningForestSimulation extends JPanel {
         JFrame frame = new JFrame("Burning Forest");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(forest);
-        frame.setSize(600, 600);
+        frame.setSize(513, 538);
         frame.setVisible(true);
 
         forest.map_initialization();
