@@ -133,8 +133,6 @@ public class BurningForestSimulation extends JPanel {
                 }
             }
         }
-
-        g.drawString("", 0, 550);
     }
 
     public static void main(String[] args) {
